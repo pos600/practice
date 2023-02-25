@@ -1,0 +1,68 @@
+SDLC
+
+Planning phase:
+Project plans
+cost estimation
+project schedules
+procurement needs
+
+Coding phase:
+System design
+Coding
+Codes checking
+
+Building phase:
+Building the software with provided codes
+
+Tesing phase:
+Checks whether they met with the plans on planning phase
+Unit testing
+Code quality testing
+integration testing
+system testing
+security testing
+performance testing
+
+	*If a defect is detected, a new version of the software is made and again tested.
+
+Release phase:
+maintenance
+support
+
+Deploy phase:
+the software is released in the production environment
+
+Operate phase:
+the use of software in the production environment
+
+Monitor Phase:
+Elements are monitored like:
+System performance
+user experience
+new security vulneraabilirties
+analysis of bugs
+
+METHODOLOGIES: https://www.tatvasoft.com/blog/top-12-software-development-methodologies-and-its-advantages-disadvantages/
+
+WATERFALL
+PROS:
+GIVES TANGIBLE OUTPUT EACH PHASE
+CONS:
+NOT FLEXIBLE TO CHANGES
+
+AGILE (I USED FDD B4)
+PROS:
+EASY DEBUGGING AND INCREMENTAL CHANGES
+CONS: 
+REAL-TIME COMMUNICATION, SO NO DOCUMENTATION.
+
+DEVOPS
+PROS:
+SIMULTANEOUS PROCESSES (FAST)
+CONS:
+TOO FAST (MAKES IT DIFFICULT TO TRACT SOURCES OF PROBLEMS AND ERRORS)
+
+
+RAPID APPLICATION DEVELOPMENT
+REQ PLANNING -> USER DESIGN -> CONSTRUCTION -> CUTOVER
+The user design and construction phases repeat until the user confirms that the product meets all requirements.
