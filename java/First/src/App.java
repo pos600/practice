@@ -1,6 +1,7 @@
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 import java.lang.reflect.Array;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -21,43 +22,41 @@ public class App {
         // System.out.println("How old are you?");
         // int age = scanner.nextInt();
         // scanner.nextLine();
-        // System.out.println("What is your favorite food?");
+        // System.out.println("Favorite food?");
         // String food = scanner.nextLine();
+
+        // System.out.println("You are " + name + ", a " + age + " year old who loves " + food);
 
         // System.out.println("Hello " + name);
         // System.out.println("You are " + age);
         // System.out.println("And you like eating " + food);
         
-        // String name = JOptionPane.showInputDialog("What is your name? ");
+        // String name = JOptionPane.showInputDialog("Who are you?");
         // JOptionPane.showMessageDialog(null, "Hello " + name);
 
         // int age = Integer.parseInt(JOptionPane.showInputDialog("How old are you?"));
-        // JOptionPane.showMessageDialog(null, "You are " + age + " years of age.");
+        // JOptionPane.showMessageDialog(null, age + " huh, i see.");
 
-        // Double gpa = Double.parseDouble(JOptionPane.showInputDialog("GPA: "));
-        // JOptionPane.showMessageDialog(null, "Your GPA is: " + gpa);
+        // double stats = Double.parseDouble(JOptionPane.showInputDialog("What's your current str stat?"));
+        // JOptionPane.showMessageDialog(null, stats + "?!?!?!?!? Woah, youre farmed up.");
 
-        // double x ;
-        // double y ;
-        // double t ;
-
-        // System.out.println("First number: ");
-        // double firstNum = scanner.nextInt();
-        // System.out.println("Second number: ");
-        // double secondNum = scanner.nextInt();
+        // System.out.println("Enter the first number:");
+        // double firstNumber = scanner.nextInt();
+        // System.out.println("Enter the second number:");
+        // double secondNumber = scanner.nextInt();
         // scanner.nextLine();
-        // System.out.println("Your name: ");
+        // System.out.println("You are? ");
         // String name = scanner.nextLine();
 
-        // double hypo = Math.sqrt((firstNum * firstNum)+(secondNum * secondNum));
-
-        // System.out.println(hypo + "and u are " + name);
-
+        // double result = Math.sqrt((firstNumber*firstNumber) + (secondNumber*secondNumber));
+        // System.out.println(name + ", the hypotenuse is " + result);
 
         // Random random = new Random();
-        // int x = random.nextInt(6) + 1;
+        // int x = random.nextInt(6)+ 1;
         // double y = random.nextDouble();
         // boolean z = random.nextBoolean();
+        // System.out.println(x);
+        // System.out.println(y);
         // System.out.println(z);
 
         // int age = 14;
@@ -74,24 +73,32 @@ public class App {
         //     System.out.println("you a child");
         // }
 
-        // String day = "xd";
+        // try{
 
-        // switch(day){
-        //     case "Saturday":System.out.println("its saturday yo.");
-        //     break;
-        //     case "Sunday":System.out.println("Sunday");
-        //     break;
-        //     case "Monday":System.out.println("ahh, death.");
-        //     break;
-        //     case "Tuesday":System.out.println("Tuesday");
-        //     break;
-        //     case "Wednesday":System.out.println("Wednesday");
-        //     break;
-        //     case "Thursday":System.out.println("Thursday");
-        //     break;
-        //     case "Friday":System.out.println("Fridaaaaaaaaaaaay");
-        //     break;
-        //     default: System.out.println("not a day of the week...");
+        //     System.out.println("What brand are you looking for?");
+        //     String brand = scanner.nextLine().toLowerCase();
+
+        //     switch(brand){
+        //         case "razer":
+        //         System.out.println("Nice choice");
+        //         break;
+        //         case "logitech":
+        //         System.out.println("Nice choice");
+        //         break;
+        //         case "red dragon":
+        //         System.out.println("Nice choice");
+        //         break;
+        //         case "glorious":
+        //         System.out.println("Nice choice");
+        //         break;
+        //         case "asus":
+        //         System.out.println("Nice choice");
+        //         break;
+        //         default:
+        //         System.out.println("not found");
+        //     }
+        // }catch(Exception e){
+        //     System.out.println("Brand not available.");
         // }
 
         // int x = 19;
@@ -125,34 +132,35 @@ public class App {
         // }
 
         // int rows;
-        // int cols; 
-        // String symbol ="";
+        // int col;
+        // String symbol;
 
-        // System.out.println("Enter # of rows: ");
+        // System.out.println("Enter number of rows:");
         // rows = scanner.nextInt();
-        // System.out.println("Enter # of columns: ");
-        // cols = scanner.nextInt();
-
-        // System.out.println("Input the symbol: ");
+        // System.out.println("Enter number of columns:");
+        // col = scanner.nextInt();
+        // System.out.println("What symbol:");
         // symbol = scanner.next();
 
         // for (int i = 1; i <= rows; i++){
         //     System.out.println();
-        //     for (int j = 1; j <= cols; j++){
+        //     for (int j = i; j <= col; j++){
         //         System.out.print(symbol + " ");
+
         //     }
         // }
 
         // int a = 10;
         // int b = 20;
-        // int c = 0;
+        // int temp = 0;
 
-        // c = a;
-        // a = b;
-        // b = c;
+        // temp = b;
+        // b = a;
+        // a = temp;
 
         // System.out.println(a);
         // System.out.println(b);
+        // System.out.println(temp);
 
         // String[] cars = {"Camaro", "Corvette", "Tesla"};
 
@@ -171,7 +179,7 @@ public class App {
             //     }
             // }
 
-            // String name = "Nito";
+            // String name = "";
 
             // boolean result = name.equals("Nito");
             // int result = name.length();
@@ -194,42 +202,41 @@ public class App {
             // food.add("pizza");
             // food.add("hamburger");
             // food.add("hotdog");
+            // food.add("steak");
+            // food.add("lex");
 
             // food.set(0, "sushi");
             // food.remove(2);
 
-            // food.clear();
+            // // food.clear();
 
             // for(int i=0; i<food.size(); i++){
             //     System.out.println(food.get(i));
             // }
 
-            // try{
-            //     ArrayList<ArrayList<String>> groceryList = new ArrayList();
 
-            //         ArrayList<String> bakeryList = new ArrayList();
-            //         bakeryList.add("pasta");
-            //         bakeryList.add("garlic bread");
-            //         bakeryList.add("donuts");
+        // ArrayList<ArrayList<String>> groceryList = new ArrayList();
 
-            //         ArrayList<String> produceList = new ArrayList();
-            //         produceList.add("tomatoes");
-            //         produceList.add("zucchini");
-            //         produceList.add("peppers");
+        //     ArrayList<String> bakeryList = new ArrayList();
+        //     bakeryList.add("pasta");
+        //     bakeryList.add("garlic bread");
+        //     bakeryList.add("donuts");
 
-            //         ArrayList<String> drinksList = new ArrayList();
-            //         drinksList.add("Soda");
-            //         drinksList.add("coffee");
+        //     ArrayList<String> produceList = new ArrayList();
+        //     produceList.add("tomatoes");
+        //     produceList.add("zucchini");
+        //     produceList.add("peppers");
 
-            //         groceryList.add(bakeryList);
-            //         groceryList.add(produceList);
-            //         groceryList.add(drinksList);
-            //         System.out.println(groceryList.get(2).get(4));
-            // }catch(Exception e){
-            //     System.out.println("invalid");
-            // }
+        //     ArrayList<String> drinksList = new ArrayList();
+        //     drinksList.add("Soda");
+        //     drinksList.add("coffee");
 
-        
+        //     groceryList.add(bakeryList);
+        //     groceryList.add(produceList);
+        //     groceryList.add(drinksList);
+        //     System.out.println(groceryList.get(0).get(1));
+        //     System.out.println(groceryList.get(1));
+
         // String[] animals = {"cat", "dog", "rat", "bird"};
         // // ArrayList<String> animals = new ArrayList<String>();
 
@@ -237,6 +244,7 @@ public class App {
         // // animals.add("dog");
         // // animals.add("rat");
         // // animals.add("bird");
+
         // for (int i=0; i<animals.length; i++){
         //     System.out.println(animals[i]);
         // }
@@ -245,14 +253,10 @@ public class App {
         //     System.out.println(i);
         // }
         
-    //     String name = "nito";
-    //     int age = 22;
-    //     hello(name, age);
+        // String name = "nito";
+        // int age = 22;
+        // hello(name, age);
 
-    // }
-
-    // static void hello(String name, int age){
-    //     System.out.println("Hello " + name + ". You are " + age + " years of age.");
     // }
 
         // int x = 3;
@@ -272,7 +276,7 @@ public class App {
         // int myInt = 5;
         // double myDouble = 1000224.12;
 
-        // printf = optional method to format console window results
+        // // printf = optional method to format console window results
         // System.out.printf("%c", myChar);
         // System.out.printf("%b", myBoolean);
         // System.out.printf("%s", myString);
@@ -312,7 +316,9 @@ public class App {
         // System.out.println(pasta.packs);
         // System.out.println(pasta2.pasta);
 
-        // pasta2.thePrice();
+        // pasta.thePrice();
+        // pasta2.thePacks();
+        // pasta.thePasta();
 
         // DiceRoller diceRoller = new DiceRoller();
 
@@ -326,17 +332,16 @@ public class App {
 
         // Car2 car2 = new Car2();
         // System.out.println(car2.toString());
-        // System.out.println(car2);
 
-        // Food food1 = new Food("Pizza");
-        // Food food2 = new Food("Hamburger");
-        // Food food3 = new Food("Hotdog");
+        // Food food1 = new Food("Pizza", "Italian");
+        // Food food2 = new Food("Hamburger", "American");
+        // Food food3 = new Food("Hotdog", "Korean");
 
         // Food[] refrigerator = {food1, food2, food3};
 
-        // System.out.println(refrigerator[0].name);
-        // System.out.println(refrigerator[1].name);
-        // System.out.println(refrigerator[2].name);
+        // System.out.println(refrigerator[0].name + " - " + refrigerator[0].cuisine);
+        // System.out.println(refrigerator[1].name + " - " + refrigerator[1].cuisine);
+        // System.out.println(refrigerator[2].name + " - " + refrigerator[2].cuisine);
 
         // Garage garage = new Garage();
         // CarGarage carGarage = new CarGarage("BMW");
@@ -379,6 +384,10 @@ public class App {
 
         // cat.sleep();
 
+        // animal.pose();
+        // cat.pose();
+        // dog.pose();
+
         // ============================ SUPER ==============================
         
         // Hero hero1 = new Hero("Batman", 42, "$$$");
@@ -394,7 +403,7 @@ public class App {
                                                                                         // declared without an implementation or body "{}"
 
         // CarAbstraction carAbstraction = new CarAbstraction();
-        // //VehicleAbstraction vehicleAbstraction = new VehicleAbstraction();
+        // // VehicleAbstraction vehicleAbstraction = new VehicleAbstraction();
 
         // carAbstraction.go();
         // carAbstraction.brake();
@@ -415,7 +424,7 @@ public class App {
         // System.out.println(carEncapsulation.getMake());
         // System.out.println(carEncapsulation.getModel());
         // System.out.println(carEncapsulation.getYear());
-
+        //     System.out.println();
         // System.out.println(carEncapsulation2.getYear());
         // System.out.println(carEncapsulation2.getMake());
 
@@ -429,13 +438,13 @@ public class App {
             // // CarCopy carCopy2 = new CarCopy(carCopy); //
 
             // System.out.println(carCopy);
-            // System.out.println(carCopy2);
+            // System.out.println(carCopy2); //ADDRESS PRINTS OUT.
             // System.out.println();
-            // System.out.println(carCopy.getMake());
+            // System.out.println(carCopy.getMake()); //IMPLEMENTED TOSTRING() METHODS
             // System.out.println(carCopy.getModel());
             // System.out.println(carCopy.getYear());
             // System.out.println();
-            // System.out.println(carCopy2.getMake());
+            // System.out.println(carCopy2.getMake()); //COPIED OBJECTS
             // System.out.println(carCopy2.getModel());
             // System.out.println(carCopy2.getYear());
             // System.out.println();
@@ -495,7 +504,7 @@ public class App {
     //         }
 
     //     } catch (InputMismatchException e){
-    //         System.out.println("not within the choices.");
+    //         System.out.println("The animal goes \"boy read the instructions\"");
     //     }
 
     // ============================ EXCEPTIONS ============================== 
@@ -568,6 +577,10 @@ public class App {
 
     }
 
+    // static void hello(String name, int age){
+    //     System.out.println("Hello " + name + ". You are " + age + " years of age.");
+    // }
+
     // static int sum(int x, int y){
     //     int z = x + y;
     //     return z;
@@ -598,6 +611,5 @@ public class App {
     //     System.out.println("overloaded method 6");
     //     return a + b + c + d;
     // }
-
 
 }
