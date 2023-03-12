@@ -15,7 +15,7 @@ public class MyFrame extends JFrame {
         this.setSize(420, 420); //sets x and y dimens
         this.setVisible(true); //makes this visible
 
-        ImageIcon Image = new ImageIcon("nito.jpg"); //creates image icon
+        ImageIcon Image = new ImageIcon("C:/Users/kuroa/Desktop/practice/java/First/src/GUISwing/nito.jpg"); //creates image icon
         this.setIconImage(Image.getImage()); //sets image icon
         this.getContentPane().setBackground(new Color(0x123444)); //change color background
     }
